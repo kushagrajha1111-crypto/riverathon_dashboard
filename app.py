@@ -5,7 +5,7 @@
 # Author: Kushagra Jha
 # ============================================================
 
-!pip install streamlit # Install streamlit
+
 import streamlit as st
 import ee
 import geemap.foliumap as geemap
@@ -224,4 +224,5 @@ if st.button("Export RVSI to Drive"):
         maxPixels=1e13
     )
     task.start()
+
     st.success("Export Task Started 🚀")
